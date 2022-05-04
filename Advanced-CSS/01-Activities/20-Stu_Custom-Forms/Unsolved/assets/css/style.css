@@ -85,7 +85,7 @@ button {
   cursor: pointer;
 }
 
-/* What does this CSS rule do? */
+/* Controls the appearance of UI tools on page. */
 select {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -112,12 +112,13 @@ select:hover, button:hover {
   box-shadow: 0 0 5px #999;
 }
 
-/* What does this pseudo-class mean? */
+/* Represents an element that received focus
+maybe by an interction. */
 .text-input:focus {
   border-right-width: 5px;
 }
 
-/* What does this pseudo-class mean? */
+/* Applies the styling when placeholder text is shown i.e. inputs. */
 .text-input:placeholder-shown {
   border-style: dashed;
 }
@@ -136,13 +137,14 @@ select:hover, button:hover {
   margin-right: 2%;
 }
 
-/* What does this selector do? */
+/* Once the elements are checked, apply styling. */
 .checkbox:checked + label {
   color: #999999;
   font-style: italic;
 }
 
-/* What does this selector do? */
+/* Once the elements are checked, apply styling.
+  Apply content after the `label` element. */
 .checkbox:checked + label::after {
   margin-left: 10px;
   font-size: 90%;
