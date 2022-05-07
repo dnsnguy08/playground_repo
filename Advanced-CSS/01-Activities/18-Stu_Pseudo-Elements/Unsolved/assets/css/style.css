@@ -60,7 +60,27 @@ article p {
 }
 
 /* TODO: Style the term/phrase - underline, black text, grab cursor */
+span[data-descr] {
+  position: relative;
+  text-decoration: underline;
+  cursor: grab;
+}
 
+span[data-descr]:hover::after,
+span[data-descr]:focus::after {
+  content: attr(data-descr);
+  position: absolute;
+  left: 20px;
+  bottom: 24px;
+  min-width: 200px;
+  border: 1px #aaaaaa solid;
+  border-radius: 50px;
+  background-color: blue;
+  padding: 12px;
+  color:white;
+  font-size: 14px;
+  z-index: 1;
+}
 /* TODO: Position tooltip above the term/phrase, same color as header and nav links, no border-radius, smaller font size */
 
 aside {

@@ -1,0 +1,18 @@
+.box {
+    /* every chile element of this selector becomes a "flex-item" */
+    display: flex;
+    background-color: blue;
+    /* default is row y-axis */
+    flex-direction: column; 
+    /* x-axis */
+    align-items: center;
+    /* align content in the box*/
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.box-items {
+    background-color: red;
+    width: 200px;
+}

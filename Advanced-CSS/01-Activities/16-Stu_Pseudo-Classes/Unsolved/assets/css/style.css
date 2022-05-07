@@ -89,6 +89,14 @@ footer {
 
 /* TODO: Add styles to display and hide the resource links */
 
+.resources:hover .links {
+  display: block;
+}
+
+.links {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   header, main {
     flex-direction: column;
