@@ -14,36 +14,96 @@
 
   <!-- Add a navbar here -->
   <!-- https://getbootstrap.com/docs/4.5/components/navbar/ -->
-
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </div>
+      </div>
+    </nav>
 
   <!-- create page margins -->
   <main class="container-fluid my-3">
     <!-- Add a jumbotron here -->
     <!-- https://getbootstrap.com/docs/4.5/components/jumbotron/ -->
-
+    <div class="jumbotron">
+        <h1 class="display-4">All of this is built with Bootstrap!</h1>
+        <hr class="my-4">
+        <a class="btn btn-info btn-lg" href="#" role="button">Learn more</a>
+      </div>
     <hr />
 
     <!-- Add a dismissible alert here -->
     <!-- https://getbootstrap.com/docs/4.5/components/alerts/ -->
-
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
     <hr />
 
     <h2>Fill Out This Form!</h2>
     <!-- Add a form here -->
     <!-- https://getbootstrap.com/docs/4.5/components/forms/ -->
-
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     <hr />
 
     <h2>Check Out This List!</h2>
     <!-- Add a list with badges here -->
     <!-- https://getbootstrap.com/docs/4.5/components/list-group -->
-
+    <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+      </ul>
     <hr />
 
     <h2>Check Out This Card!</h2>
     <!-- Add a card with a header, list, and footer here  -->
     <!-- https://getbootstrap.com/docs/4.5/components/card/ -->
-
+    <div class="card">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+      </div>
   </main>
 
 </body>
