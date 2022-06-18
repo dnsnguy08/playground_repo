@@ -2,6 +2,7 @@ var requestUrl = 'https://api.github.com/orgs/Netflix/repos';
 
 // JQuery AJAX
 // TODO: Comment on how AJAX returns an API call
+// same output as fetch()
 $.ajax({
   url: requestUrl,
   method: 'GET',
@@ -12,6 +13,7 @@ $.ajax({
 
 // Browser Fetch Method
 // TODO: Comment on how Fetch returns an API call
+// same as ajax, easier to read with data length, indexes, and key headers
 fetch(requestUrl)
   .then(function (response) {
     return response.json();
@@ -23,6 +25,7 @@ fetch(requestUrl)
 
 // Browser XMLHttpRequest
 // TODO: Comment on how XMLHttpRequest returns an API call
+// raw data, harder to read, whole array of objects expanded without indexes
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function () {
   if (xhr.readyState === XMLHttpRequest.DONE) {
