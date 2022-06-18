@@ -31,6 +31,18 @@ formEl.on('submit', handleFormSubmit);
 
 // Add Autocomplete widget here
 //
+function addAutocompleteWidget () {
+var skills = [`JavaScript`, `Node.js`, `Bootstrap`, `React`, `CSS`];
+nameInputEl.autocomplete({
+  source: skills
+  });
+}
 
+addAutocompleteWidget();
 // Add Datepicker widget here
 //
+function datepicker(){
+  dateInputEl.datepicker(); 
+}
+
+datepicker();
