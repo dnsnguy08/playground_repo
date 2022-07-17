@@ -7,6 +7,7 @@ describe("Algo", () => {
       const reversed = "!dlroW olleH";
 
       const result = new Algo().reverse(str);
+      console.log(result);
 
       expect(result).toEqual(reversed);
     });
@@ -17,6 +18,7 @@ describe("Algo", () => {
       const str = "racecar";
 
       const result = new Algo().isPalindrome(str);
+      console.log(result);
 
       expect(result).toEqual(true);
     });
@@ -25,6 +27,7 @@ describe("Algo", () => {
       const str = "neon";
 
       const result = new Algo().isPalindrome(str);
+      console.log(result);
 
       expect(result).toEqual(false);
     });
@@ -36,7 +39,7 @@ describe("Algo", () => {
       const capitalized = "Capitalize Every First Word Of The String.";
 
       const result = new Algo().capitalize(str);
-
+      console.log(result);
       expect(result).toEqual(capitalized);
     });
   });
