@@ -42,5 +42,8 @@ router.get('/', async (req, res) => {
 });
 
 // TODO: Add a route called `/dish/:num` below
-
+router.get('/dish/:num', (req, res) => {
+  const index = parseInt(req.params.num);
+  res.render('dish', dishes[index]);
+});
 module.exports = router;

@@ -1,8 +1,9 @@
 // Here is where we set up our Dish model, for when we are ready to connect to a database in future activities.
 
 // TODO: Add a comment indicating how this file fits into the MVC framework. 
+// model in te MVC framework
 // TODO: What is it responsible for handling?
-
+//  handles the modeling of data in the db
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
